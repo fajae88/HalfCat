@@ -37,14 +37,12 @@ h1
 }
 #Inicio
 {
-<<<<<<< HEAD
     color:black;
     background-color: #5BA5B2;
     margin-left: 90px;
     padding: 20px;
     padding-left: 100px;
     padding-right: 150px;
-=======
     justify-content: center;
     color:black;
     background-color: #5BA5B2;
@@ -54,14 +52,12 @@ h1
     padding-bottom: 15px;
     padding-top: 15px;
     padding-right: 6cm;
->>>>>>> d37525b53b387045903f40ee1ada1145f462726d
     border-radius: 10px;
     font-family: "Topicos";
 
 }
 #SobreOSite
 {
-<<<<<<< HEAD
     color:black;
     background-color: #47818B;
     margin-left: 90px;
@@ -70,14 +66,12 @@ h1
     padding-right: 200px;
     border-radius: 10px;
     font-family: "Topicos";
-=======
     justify-content: center;
     text-align: center;
     align-items: center;
     color:black;
     text-decoration: none;
-    background-color: #47818B;
-    
+    background-color: #47818B; 
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 10cm;
@@ -119,11 +113,8 @@ h1
 }
 #Sumario
 {
-<<<<<<< HEAD
-    padding-top: 5cm;
-    color: white
->>>>>>> d37525b53b387045903f40ee1ada1145f462726d
-=======
+    padding-top: 2px;
+    color: white;
     display: inline-block;
     width: 100px;
     height: 450px;
@@ -135,9 +126,8 @@ h1
 }
 li{
     height: 40px;
-    padding-top: 20px;
+    padding-top: 23px;
 }
 a{
     text-decoration: none;
->>>>>>> 370e9ba543c0fa7fba35c4c03fcb230abfd87bc8
 }
