@@ -5,16 +5,18 @@ body
 }
 @font-face {
   
-    font-family: "cursive";
-    src: url(../HalfCat/Fontes/better_4/better\ -\ Peronal\ Use.otf);
+    font-family: "Titulo";
+    src: url(Fontes/Cattys.otf)
 }
 h1
 {
-    font-family: "cursive";
-    color: azure;
-    font-size: 3em;
+    font-family: "Titulo";
+    color:#e4f2f7;
+    font-size: 4em;
     text-align: center;
+    padding-top: 50px;
 }
+
 
 @font-face {
     font-family: "padrao";
@@ -25,18 +27,19 @@ h1
     font-family: "padrao";
     font-size: 17px;
     text-align:justify;
-    background-color:#5BA5B2;
+    background-color:#e4f2f7;
     padding: 50px;
     border-radius: 10px;
     text-indent: 4em;
     flex-direction: row;
     width: 85%;
     justify-content: center;
+    color: #000;
 }
 
 @font-face {
     font-family: "Topicos";
-    src: url(../HalfCat/Fontes/creato_display/CreatoDisplay-Black.otf);
+    src: url(Fontes/StropicaDEMO.otf)
 }
 .paragrafos{
     display: flex;
@@ -47,11 +50,13 @@ h1
     display: flex;
     margin-left: 70px ;
     margin-right: 70px;
-    
+    color: aliceblue;
+    font-size: 25px;
+    transition: 500ms linear;
 }
 #Inicio
 {
-    color: black;
+        color:aliceblue;
     background-color: #5BA5B2;
     text-align: center;
     text-decoration: none;
@@ -64,7 +69,7 @@ h1
 }
 #SobreOSite
 {
-    color:black;
+    color:aliceblue;
     background-color: #47818B;
     border-radius: 10px;
     font-family: "Topicos";
@@ -81,7 +86,7 @@ h1
 }
 div#SobreNos
 {
-    color:black;
+    color:aliceblue;
     background-color: #2E707B;
     text-align: center;
     text-decoration: none;
@@ -97,11 +102,12 @@ div#SobreNos
     font-family: "padrao";
     font-size: 17px;
     text-align:justify;
-    background-color:#47818B;
+    background-color:#e4f2f7;
     padding: 40px;
     border-radius: 10px;
     text-indent: 4em;
     width: 85%;
+    color: #000;
 
 }
 #Projeto
@@ -109,18 +115,21 @@ div#SobreNos
     font-family: "padrao";
     font-size: 17px;
     text-align:justify;
-    background-color: #2E707B;
+    background-color:#e4f2f7;
     padding: 50px;
     border-radius: 10px;
     text-indent: 4em;
     flex-direction: row;
     width: 85%;
+    color: #000;
 }
 #Sumario
 {
+    font-family: "Topicos";
+    font-size: 20px;
     padding-top: 5px;
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 470px;
     background-color: #e4f2f7;
     text-align:left;
