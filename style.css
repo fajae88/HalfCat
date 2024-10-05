@@ -23,14 +23,15 @@ h1
     font-family: "padrao";
     src: url(../HalfCat/Fontes/creato_display/CreatoDisplay-Thin.otf);
 }
+.content {
+    display: none;
+}
 
 .Introducao
 {
     font-family: "padrao";
     font-size: 17px;
     text-align:justify;
-    
-   
 }
 
 @font-face {
@@ -56,69 +57,8 @@ h1
     margin-right: 70px;
     font-size: 25px;
     color: aliceblue;
-}
-#Inicio
-{
-    color: #e4f2f7;
-    background-color: #5BA5B2;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10px;
-    font-family: "Topicos";
-    padding: 10px;
+    padding: 50px;
     display: flex;
-    justify-content: center;
-    width: 33%;
-}
-#Inicio:hover {
-    transform: scale(1.1);
-  }
-#SobreOSite
-{
-    background-color: #47818B;
-    border-radius: 10px;
-    font-family: "Topicos";
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 10px;
-    font-family: "Topicos";
-    flex-direction: row;
-    position: relative;
-    padding: 10px;
-    width: 33%
-}
-#SobreOSite:hover {
-    transform: scale(1.1);
-  }
-div#SobreNos
-{
-    background-color: #2E707B;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10px;
-    font-family: "Topicos";  
-    flex-direction: row;
-    position: relative;
-    padding: 10px;
-    width: 33%;
-}
-#SobreNos:hover {
-    transform: scale(1.1);
-  }
-#WhiteCat
-{
-    font-family: "padrao";
-    font-size: 17px;
-    text-align:justify;
-    background-color:#e4f2f7;
-    padding: 40px;
-    border-radius: 10px;
-    text-indent: 4em;
-    width: 85%;
-    color: #000;
-
 }
 #Projeto
 {
@@ -169,27 +109,8 @@ a{
 }
 .Lista{
     color: #000;
-}
-#Importancia{
-    color: #000;
-}
-#Alfabeto{
-    color: #000;
-}
-#Numeros{
-    color: #000;
-}
-#Cores{
-    color: #000;
-}
-#Saudacoes{
-    color: #000;
-}
-#Sentimentos{
-    color: #000;
-}
-#Escritas{
-    color: #000;
+    background-color:aliceblue;
+    border-radius: 8px;
 }
 #Contato{
     margin-top: 75px;
@@ -252,9 +173,47 @@ button{
     margin-top: 15px;
     border: none;
     padding: 3px;
-
+    flex-direction: column;
+    display: flex;
+    justify-content:space-evenly;
+    background-color: aliceblue;
+    align-items: center;
+    
 }
 button:hover {
     background-color: #5BA5B2; 
     color: white;
 }
+
+.tab-buttons{
+    display: flex;
+    align-items:center;
+    margin: 50px;
+    transition-duration: 0.4s;
+}
+
+.tab-buttons:hover {
+    background-color: #7FC9D6; 
+    color: white;
+}
+
+.tab-btn1{
+    display: flex;
+    background-color:#5BA5B2; 
+}
+
+.tab-btn2{
+    display: flex;
+    background-color:#47818B;
+}
+
+.tab-btn3{
+    display: flex;
+    background-color:#2E707B;
+}
+#Menu{
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
