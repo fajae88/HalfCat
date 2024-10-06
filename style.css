@@ -16,6 +16,7 @@ h1
     font-size: 7em;
     text-align: center;
     padding-top: 30px;
+    margin-bottom: 35px;
 }
 
 
@@ -48,7 +49,7 @@ h1
     width: 85%;
     justify-content: center;
     color: #000;
-    margin-top: 10px;
+   
 }
 
 #Menu{
@@ -57,7 +58,7 @@ h1
     margin-right: 70px;
     font-size: 25px;
     color: aliceblue;
-    padding: 50px;
+    
     display: flex;
 }
 #Projeto
@@ -85,7 +86,8 @@ h1
     text-align:left;
     border-radius: 20px;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 80px;
+    
     
     position: relative;
     text-decoration: none; 
@@ -104,8 +106,11 @@ a{
     padding-top: 30px;
     border-radius: 20px;
     display:flex;
-    width: 300px;
-    padding-left: 30%;
+    width: 700px;
+    margin-left: 200px;
+    
+    
+    
 }
 .Lista{
     color: #000;
@@ -188,32 +193,38 @@ button:hover {
 .tab-buttons{
     display: flex;
     align-items:center;
-    margin: 50px;
+    margin: 10px;
     transition-duration: 0.4s;
 }
 
 .tab-buttons:hover {
-    background-color: #7FC9D6; 
+    background-color: #7fc9d64d; 
     color: white;
 }
 
 .tab-btn1{
     display: flex;
-    background-color:#5BA5B2; 
+    background-color:#5BA5B2;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    color: aliceblue;
+    font-size: 20px;
 }
 
-.tab-btn2{
-    display: flex;
-    background-color:#47818B;
+#in{
+    background-color: #5BA5B2;
 }
-
-.tab-btn3{
-    display: flex;
-    background-color:#2E707B;
+#sobr{
+    background-color: #47818B;
+}
+#nos{
+    background-color: #2E707B;
 }
 #Menu{
     align-items: center;
     justify-content: center;
     color: aliceblue;
+
 }
 
