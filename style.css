@@ -22,7 +22,7 @@ h1
 
 @font-face {
     font-family: "padrao";
-    src: url(../HalfCat/Fontes/creato_display/CreatoDisplay-Thin.otf);
+    src: url(../HalfCat/Fontes/creato_display/CreatoDisplay-Light.otf);
 }
 .content {
     display: none;
@@ -49,7 +49,8 @@ h1
     width: 85%;
     justify-content: center;
     color: #000;
-   
+    font-family: "padrao";
+    font-size: 17px;
 }
 
 #Menu{
@@ -108,9 +109,6 @@ a{
     display:flex;
     width: 700px;
     margin-left: 200px;
-    
-    
-    
 }
 .Lista{
     color: #000;
