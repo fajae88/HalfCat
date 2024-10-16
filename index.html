@@ -20,25 +20,26 @@
     <div id="Menu">
     
         <div class="tab-buttons">
-            <a class="tab-btn1"  content-id="Inicio" id="in" href="./index.html">
+            <button class="tab-btn1"  content-id="Inicio" id="in">
                 Início
-            </a>
+            </button>
         
 
-            <a class="tab-btn1" content-id="SobreOSite" id="sobr" href="./SobreOSite.html">
+            <button class="tab-btn1" content-id="SobreOSite" id="sobr">
                 WhiteCat
-            </a>
+            </button>
         
 
-            <a class="tab-btn1" content-id="SobreNos" id="nos" href="./SobreNos.html">
+            <button class="tab-btn1" content-id="SobreNos" id="nos">
                 Sobre nós
-            </a>
+            </button>
         </div>
 </div>
     
 
-    <div class="paragrafos">
-        <p class="Introducao">
+    <div class="tab-contents">
+        <div class="content show" content-id="Inicio">
+           <p>
             <strong>
                 Libras significa Língua Brasileira de Sinais. Através dela, é possível promover mais acessibilidade na comunicação para pessoas com surdas e deficientes auditivas. Cada país tem a sua própria estrutura de linguagem, que pode variar inclusive de região para região,
             dependendo da cultura do local e das expressões e regionalismos utilizados na linguagem comum. No Brasil, a Língua Brasileira de Sinais foi estabelecida através da lei nº 10.436/2002 como a língua oficial das pessoas surdas.
@@ -48,14 +49,19 @@
                 colocando-a a salvo de toda forma de violência, negligência e discriminação”.
             </strong>
         </p>
-        <p class="Introducao">
+        <p class="content" content-id="Inicio">
             <strong>
                 A inclusão de LIBRAS na sociedade é de grande importância para um ambiente mais acessível para todos. A lei 13.146/2015 institui a inclusão das pessoas com deficiência. Nela se encontra o seguinte Parágrafo: “É dever do Estado, da família, da comunidade escolar e da sociedade assegurar educação de qualidade à pessoa com deficiência,
                 colocando-a a salvo de toda forma de violência, negligência e discriminação”
             </strong>.
         </p>
-       
+
     </div>
+    </div>
+
+
+    
+    
 
     <br>
     <br>
@@ -67,13 +73,13 @@
             
                 <div class="Lista">
                     <div class="button">
-                        <button class="butao" href="Alfabeto">Alfabeto</button>
-                        <button class="butao" href="Numero">Número</button>
-                        <button class="butao" href="Importancia">Importância</button>
-                        <button class="butao" href="Cores">Cores</button>
-                        <button class="butao" href="Saudacoes">Saudações</button>
-                        <button class="butao" href="Sentimentos">Sentimentos</button>
-                        <button class="butao" href="Escrita">Escrita</button>
+                        <button class="butao"> <a href="Alfabeto.html"> Alfabeto </a></button>
+                        <button class="butao" href="Numero.html">Número</button>
+                        <button class="butao" href="Importancia.html">Importância</button>
+                        <button class="butao" href="Cores.html">Cores</button>
+                        <button class="butao" href="Saudacoes.html">Saudações</button>
+                        <button class="butao" href="Sentimentos.html">Sentimentos</button>
+                        <button class="butao" href="Escrita.html">Escrita</button>
                     </div>
                 </div>
                 </ul>
@@ -100,5 +106,7 @@
     </div>
 
     </div>
+
+    <script src="src/javascript/script.js"></script>
 </body>
 </html>

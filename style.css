@@ -24,22 +24,24 @@ h1
     font-family: "padrao";
     src: url(../HalfCat/Fontes/creato_display/CreatoDisplay-Light.otf);
 }
-.content {
-    display: none;
-}
 
-.Introducao
-{
+.content.show{
+    display: flex;
     font-family: "padrao";
     font-size: 17px;
     text-align:justify;
+}
+
+.content
+{
+    display: none;
 }
 
 @font-face {
     font-family: "Topicos";
     src: url(Fontes/StropicaDEMO.otf)
 }
-.paragrafos{
+.tab-contents{
     background-color:#e4f2f7;
     margin-left: 80px;
     padding: 30px;
@@ -108,7 +110,9 @@ a{
     border-radius: 20px;
     display:flex;
     width: 700px;
-    margin-left: 200px;
+    margin-left: 100px;
+    height: 450px;
+    align-items: center;
 }
 
 #Contato{
@@ -227,29 +231,6 @@ a{
     color: white;
 }
 
-a{
-    
-    margin-bottom: 30px;
-    font-family: "Topicos";
-    font-size: 17px;
-    border-radius: 7px;
-    transition-duration: 0.4s;
-    margin-top: 15px;
-    border: none;
-    padding: 3px;
-    flex-direction: column;
-    display: flex;
-    justify-content:space-evenly;
-    background-color: aliceblue;
-    align-items: center;
-
-
-    
-}
-a:hover {
-    background-color: #5BA5B2; 
-    color: white;
-}
 
 .tab-buttons{
     display: flex;
@@ -258,10 +239,12 @@ a:hover {
     transition-duration: 0.4s;
 }
 
+
 .tab-buttons:hover {
     background-color: #7fc9d64d; 
     color: white;
 }
+
 
 .tab-btn1{
     display: flex;
@@ -270,8 +253,86 @@ a:hover {
     width: 400px;
     height: 40px;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 25px;
+
+    margin-bottom: 30px;
+    font-family: "Topicos";
+    border-radius: 7px;
+    transition-duration: 0.4s;
+    margin-top: 15px;
+    border: none;
+    padding: 3px;
+    flex-direction: column;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
+
+
+.tab-btn1:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.tab-btn1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tab-btn1:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tab-btn1-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.tab-btn1::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.tab-btn1-white::after {
+    background-color: #fff;
+}
+
+.tab-btn1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.tab-btn1-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 
 #in{
     background-color: #5BA5B2;
@@ -291,3 +352,11 @@ a:hover {
 .Centro{
     margin-left: 80px;
 }
+
+.video{
+    width: 650px;
+    height: 400px;
+}
+
+
+
