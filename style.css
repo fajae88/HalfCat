@@ -22,14 +22,14 @@ h1
 
 @font-face {
     font-family: "padrao";
-    src: url(../HalfCat/Fontes/creato_display/CreatoDisplay-Light.otf);
+    src: url(./Fontes/creato_display/CreatoDisplay-Thin.otf);
 }
 
 .content.show{
     display: flex;
-    font-family: "padrao";
     font-size: 17px;
-    text-align:justify;
+    text-align:center;
+    gap: 14px;
 }
 
 .content
@@ -43,43 +43,27 @@ h1
 }
 .tab-contents{
     background-color:#e4f2f7;
-    margin-left: 80px;
-    padding: 30px;
+    padding: 40px;
     border-radius: 15px;
     text-indent: 4em;
-    flex-direction: row;
     width: 85%;
     justify-content: center;
     color: #000;
     font-family: "padrao";
     font-size: 17px;
+    margin-left: 50px;
 }
 
 #Menu{
-    display: flex;
+    display: block;
     margin-left: 70px ;
     margin-right: 70px;
     font-size: 25px;
     color: aliceblue;
-    
-    display: flex;
 }
-#Projeto
-{
-    font-family: "padrao";
-    font-size: 17px;
-    text-align:justify;
-    background-color:#e4f2f7;
-    padding: 50px;
-    border-radius: 10px;
-    text-indent: 4em;
-    flex-direction: row;
-    width: 85%;
-    color: #000;
-}
+
 #Sumario
-{
-    
+{   
     font-size: 20px;
     padding-top: 10px;
     display: inline-block;
@@ -95,14 +79,17 @@ h1
     position: relative;
     text-decoration: none; 
 }
+
 li{
     height: 40px;
     padding-top: 26px;
 }
+
 a{
     text-decoration: none;
     color: white;
 }
+
 .VideoFundo
 {
     background-color:#e4f2f7;
@@ -110,7 +97,7 @@ a{
     border-radius: 20px;
     display:flex;
     width: 700px;
-    margin-left: 10px;
+    margin-left: 5px;
     height: 450px;
     align-items: center;
 }
@@ -153,7 +140,7 @@ a{
 {
     display: flex;
     justify-content: space-around;
-    padding-right: 22%;
+    padding-right: 335px;
 }
 .button
 {
@@ -237,6 +224,8 @@ a{
     align-items:center;
     margin: 10px;
     transition-duration: 0.4s;
+    margin-left: 100px;
+    gap: 6px;
 }
 
 
@@ -254,7 +243,7 @@ a{
     height: 40px;
     color: aliceblue;
     font-size: 25px;
-
+    cursor: pointer;
     margin-bottom: 30px;
     font-family: "Topicos";
     border-radius: 7px;
@@ -333,7 +322,10 @@ a{
     }
 }
 
+.tab-btn1.active{
+    background-color: #5BA5B2;
 
+}
 #in{
     background-color: #5BA5B2;
 }

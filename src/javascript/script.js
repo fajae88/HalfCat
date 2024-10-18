@@ -7,11 +7,13 @@ const tabClicked = (tab) => {
     tab.classList.add('active');
 
     const contents = document.querySelectorAll('.content');
-    contents.forEach(contents => contents.classList.remove('show'));
+    contents.forEach(content => content.classList.remove('show'));
 
-    const contentId = tab.getAttribuite('content-id');
+    const contentId = tab.getAttribute('content-id');
     const content = document.getElementById(contentId);
 
     content.classList.add('show');
 }
 
+const currentActiveTab = document.querySelector('.tab-btn1.active');
+tabClicked(currentActiveTab);

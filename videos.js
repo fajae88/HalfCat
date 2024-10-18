@@ -15,3 +15,5 @@ const tabClicked = (tab) => {
     content.classList.add('show');
 }
 
+const currentActiveTab = document.querySelector('.tab-btn.active');
+tabClicked(currentActiveTab);
