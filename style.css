@@ -97,7 +97,7 @@ a{
     border-radius: 20px;
     display:flex;
     width: 700px;
-    margin-left: 5px;
+    margin-left: 180px;
     height: 450px;
     align-items: center;
 }
@@ -131,6 +131,8 @@ a{
     font-family: "padrao";
     color: #000;
     text-align: center;
+    
+   
 }
 @font-face {
     font-family:"Fale Conosco";
@@ -224,7 +226,7 @@ a{
     align-items:center;
     margin: 10px;
     transition-duration: 0.4s;
-    margin-left: 100px;
+    margin-left: 60px;
     gap: 6px;
 }
 
@@ -345,11 +347,23 @@ a{
     margin-left: 80px;
 }
 
-.video{
+video{
     width: 650px;
-    height: 400px;
+    height: 450px;
     border-radius: 15px;
+    margin-left: 25px;
+    margin-bottom: 50px;
 }
+#email{
+    height: 60px;
+    width: 100px;
+    display: inline;
+    margin-left: 62%;
+    margin-bottom: 100px;
+}
+
+
+
 
 
 

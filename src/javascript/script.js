@@ -17,3 +17,22 @@ const tabClicked = (tab) => {
 
 const currentActiveTab = document.querySelector('.tab-btn1.active');
 tabClicked(currentActiveTab);
+
+
+
+function loadVideo(videoSrc) {
+    // Seleciona o elemento de vídeo
+    const videoPlayer = document.getElementById('video-player');
+
+    // Pausa o vídeo atual (caso esteja tocando)
+    videoPlayer.pause();
+
+    // Atualiza a fonte do vídeo para o novo arquivo
+    videoPlayer.src = videoSrc;
+
+    // Recarrega o vídeo com a nova fonte e inicia a reprodução
+    videoPlayer.load();
+    videoPlayer.play();
+}
+
+

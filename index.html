@@ -68,13 +68,9 @@
             </strong>
             </p> 
         </div>
-
         </div>
     </div>
-
     
-    
-
     <br>
     <br>
     <br>
@@ -85,19 +81,33 @@
             
                 <div class="Lista">
                     <div class="button">
-                        <button class="butao"> <a href="Alfabeto.html"> Alfabeto </a></button>
-                        <button class="butao" href="Numero.html">Número</button>
-                        <button class="butao" href="Importancia.html">Importância</button>
-                        <button class="butao" href="Cores.html">Cores</button>
-                        <button class="butao" href="Saudacoes.html">Saudações</button>
-                        <button class="butao" href="Sentimentos.html">Sentimentos</button>
-                        <button class="butao" href="Escrita.html">Escrita</button>
+
+                        <button onclick="loadVideo('./Video/Mitski - Washing Machine Heart (1).mp4')" class="butao">Alfabeto</button>
+                            <span class="conteudo"></span>
+
+                        <button onclick="loadVideo('./Video/Números.mp4')" class="butao">Número</button>
+                            <span class="conteudo"></span>
+
+                        <button class="butao">Importância</button>
+                            <span class="conteudo"></span>
+
+                        <button class="butao">Cores</button>
+                            <span class="conteudo"></span>
+
+                        <button class="butao">Saudações</button>
+                            <span class="conteudo"></span>
+
+                        <button class="butao">Sentimentos</button>
+
+                        <button class="butao">Escrita</button>
+
                     </div>
                 </div>
-                </ul>
             
                     <div class="VideoFundo">
-            
+                            <video id="video-player" src="./Video/Mitski - Washing Machine Heart (1).mp4"
+                            controls
+                            muted> </video>
                     </div>
             </div>
         </div>
@@ -112,12 +122,12 @@
     <div id="FaleConosco">
             <p>
                 <strong>
-                Está com alguma dúvida? Fale conosco:
+                Está com alguma dúvida? Fale conosco: 
             </strong>
             </p>
     </div>
+    <img id="email" src="./email.png" alt="email">
 
-    </div>
 
     <script src="src/javascript/script.js"></script>
 </body>
