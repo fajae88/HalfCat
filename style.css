@@ -15,10 +15,13 @@ h1
     color:aliceblue;
     font-size: 7em;
     text-align: center;
-    padding-top: 30px;
-    margin-bottom: 35px;
+    padding-top: 50px;
+    margin-bottom: 30px;
     animation: float 1s ease-in-out infinite;
     transition: 0.2 linear;
+    padding: 20px;
+    display: inline-block;
+    margin-left: 37%;
 }
 @keyframes float{
     0%, 100% {
@@ -238,7 +241,7 @@ a{
     align-items:center;
     margin: 10px;
     transition-duration: 0.4s;
-    margin-left: 60px;
+    margin-left: 80px;
     gap: 6px;
 }
 
@@ -392,7 +395,13 @@ text-align: justify;
     height: 60px;
     background-color: aliceblue;
     border-radius: 50px;
-    display: flex;
+    display: inline-block;
+    border:solid;
+    border-color:#47818B;
+    justify-content: space-between;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 
