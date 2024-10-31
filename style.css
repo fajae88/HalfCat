@@ -409,6 +409,7 @@ text-align: justify;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .wrapper .form-box{
     width: 100%;
@@ -522,4 +523,30 @@ text-align: justify;
 .fa-solid fa-xmark{
     font-size: 1.5em;
     
+}
+
+.icon-close{
+    position: absolute;
+    margin-left:30px;
+    margin-bottom: 390px;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #0b3138;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1em;
+}
+
+.wrapper .form-box.login{
+    display: none;
 }
