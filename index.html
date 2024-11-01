@@ -6,6 +6,8 @@
     <title>WhiteCat</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="file.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
 
     <style>
         main{
@@ -20,12 +22,13 @@
     <img id="perfil" src="./Mídia-removebg-preview.png" alt="">
 
     <div class="wrapper">
+        <img class="icon-close" src="./Imagens/xmark-solid.svg">
         <div class="form-box login">
             <h2>Login</h2>
             <form action="#">
                 <div class="input-box">
                     <span class="icon"></span>
-                    <input type="email" required>
+                        <input type="email" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
@@ -33,9 +36,36 @@
                     <input type="senha" required>
                     <label>Senha</label>
                 </div>
-                <div class="remeber-forgot">
+                <div class="remember-forgot">
                     <label><input type="checkbox">Lembrar-me</label>
                     <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn-senha">Login</button>
+                <div class="login-register">
+                    <p>Não tem uma conta?<a href="#" 
+                    class="register-link">Registrar</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="form-box register">
+            <h2>Registrar</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"></span>
+                        <input type="Nome" required>
+                    <label>Nome</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="senha" required>
+                    <label>Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Eu aceito os termos e condições</label>
+                
                 </div>
                 <button type="submit" class="btn-senha">Login</button>
                 <div class="login-register">

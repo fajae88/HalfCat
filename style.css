@@ -391,7 +391,7 @@ text-align: justify;
     height: 60px;
     background-color: aliceblue;
     border-radius: 50px;
-      border:solid;
+    border:solid;
     border-color:#47818B;
     justify-content: space-between;
     float: right;
@@ -409,6 +409,7 @@ text-align: justify;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .wrapper .form-box{
     width: 100%;
@@ -470,11 +471,82 @@ text-align: justify;
 
 .remember-forgot{
     font-size: .9em;
-    color: #000;
+    color:#000;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
     justify-content:space-between;
 }
+.remember-forgot label input {
+    accent-color: #000;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: #000;
+    text-decoration: none;
+    transition: 800ms;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
 
+.btn-senha{
+    width: 100%;
+    height: 45px;
+    background-color: #0b3138;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
 
+.login-register{
+    font-size: .9em;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+.fa-solid fa-xmark{
+    font-size: 1.5em;
+    
+}
+
+.icon-close{
+    position: absolute;
+    margin-left:30px;
+    margin-bottom: 390px;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #0b3138;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1em;
+}
+
+.wrapper .form-box.login{
+    display: none;
+}
