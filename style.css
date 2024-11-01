@@ -16,6 +16,7 @@ h1
     font-size: 7em;
     text-align: center;
     padding-top: 50px;
+    margin-top: 100px;
     margin-bottom: 30px;
     animation: float 1s ease-in-out infinite;
     transition: 0.2 linear;
@@ -381,12 +382,23 @@ video{
 #email:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);   
 }
-.content-description
-{
+
+.content-description{
 text-indent:4em;
 text-align: justify;
 }
-#perfil{
+
+header{
+    position: fixed;
+    top: 24px;
+    width: 100%;
+    left: 95%;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+.btnLogin-popup{
     width: 60px;
     height: 60px;
     background-color: aliceblue;
@@ -395,14 +407,15 @@ text-align: justify;
     border-color:#47818B;
     justify-content: space-between;
     float: right;
-    margin-right: 10px;
-    margin-top: 10px;
+    cursor: pointer;
 }
 .wrapper{
     position: relative;
     width: 400px;
     height: 440px;
+    background: transparent;
     background-color: #fff;
+    border: 1px solid #5BA5B2(255, 255, 255, .5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px #000(0, 0, 0, .5);
@@ -410,7 +423,19 @@ text-align: justify;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transition: height .2s ease;
+    transform: scale(0);
+    position: absolute;
 }
+
+.wrapper.active{
+    height: 520px;
+}
+
+.wrapper.active-popup{
+    transform: scale(1);
+}
+
 .wrapper .form-box{
     width: 100%;
     padding: 40px;
@@ -548,5 +573,29 @@ text-align: justify;
 }
 
 .wrapper .form-box.login{
-    display: none;
+    transition: transform .18s ease;
+    transform: translateX(0);
+} 
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.posicao{
+    display: inline-block;
+    position: relative;
+    left: 12%;
+    top: 100%;
 }
